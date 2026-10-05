@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réserver une séance — Sérénité Massage</title>
+  <meta name="description" content="Réservez votre massage en ligne : choisissez votre prestation et un créneau disponible.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 4c4 5 4 11 0 16-4-5-4-11 0-16Z"/><path d="M16 20c-6-1-10-5-11-10 6 0 10 4 11 10Zm0 0c6-1 10-5 11-10-6 0-10 4-11 10Z"/><path d="M8 26h16"/></svg>
+        Sérénité Massage
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#prestations">Prestations</a></li>
+          <li><a href="index.html#a-propos">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn-small" href="reservation.html">Réserver</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Réservation</span>
+        <h1>Choisissez votre créneau</h1>
+        <p class="lead">Sélectionnez une prestation, puis un jour et un horaire disponibles. Une confirmation vous est envoyée par e-mail.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0">
+      <div class="container">
+        <nav class="booking-filters" aria-label="Choix de la prestation">
+          <a class="btn btn-outline btn-small" href="reservation.html">Toutes les prestations</a>
+          <a class="btn btn-outline btn-small" href="reservation.html?prestation=relaxant">Massage relaxant</a>
+          <a class="btn btn-outline btn-small" href="reservation.html?prestation=sportif">Massage sportif</a>
+          <a class="btn btn-outline btn-small" href="reservation.html?prestation=pierres-chaudes">Pierres chaudes</a>
+          <a class="btn btn-outline btn-small" href="reservation.html?prestation=reflexologie">Réflexologie plantaire</a>
+        </nav>
+
+        <div class="booking-wrapper">
+          <div id="cal-booking"></div>
+        </div>
+
+        <div class="notice" id="cal-notice" hidden>
+          <h2 style="font-size: 1.3rem">Calendrier pas encore configuré</h2>
+          <p>Pour afficher l'agenda de réservation, indiquez votre identifiant Cal.com dans le fichier <code>js/config.js</code> (variable <code>CAL_USERNAME</code>). Les étapes sont détaillées dans le README du projet.</p>
+          <p>En attendant, vous pouvez réserver par téléphone au <a href="tel:+33600000000">06 00 00 00 00</a>.</p>
+        </div>
+
+        <div class="booking-notes">
+          <div>
+            <h3>Paiement sur place</h3>
+            <p>Aucun paiement en ligne : vous réglez à la fin de la séance, en espèces, par chèque ou par carte.</p>
+          </div>
+          <div>
+            <h3>Annulation</h3>
+            <p>Vous pouvez annuler ou déplacer votre rendez-vous gratuitement jusqu'à 24 h avant, grâce au lien reçu dans l'e-mail de confirmation.</p>
+          </div>
+          <div>
+            <h3>Le jour J</h3>
+            <p>Merci d'arriver 5 minutes en avance. Signalez-nous toute contre-indication (grossesse, blessure récente, traitement…).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Sérénité Massage</h2>
+          <p>Massages de bien-être et de relaxation, sans visée thérapeutique ou médicale. Ils ne remplacent pas un avis ou un traitement médical.</p>
+        </div>
+        <div>
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="index.html#prestations">Prestations</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li>12 rue des Lilas, 69007 Lyon</li>
+            <li><a href="tel:+33600000000">06 00 00 00 00</a></li>
+            <li><a href="mailto:contact@exemple.fr">contact@exemple.fr</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Sérénité Massage</span>
+        <a href="mentions-legales.html">Mentions légales &amp; confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
