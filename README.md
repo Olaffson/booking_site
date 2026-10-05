@@ -88,7 +88,7 @@ python3 -m http.server 8000
 ## Personnalisation
 
 - **Couleurs et polices** : variables CSS en haut de `css/style.css` (`--color-primary`, etc.).
-- **Photo de fond de l'accueil** : remplacez `img/hero.jpg` par votre photo, en gardant le même nom. Utilisez une image en paysage d'environ 1920 × 1080 px et de moins de 400 Ko (compressez-la avec [squoosh.app](https://squoosh.app) par exemple). L'image fournie n'est qu'une ambiance floue provisoire. Un voile sombre est appliqué par-dessus pour que le texte reste lisible ; son intensité se règle dans `.hero-photo` de `css/style.css`. Pour trouver des photos gratuites et libres de droits : [Unsplash](https://unsplash.com/fr/s/photos/massage) ou [Pexels](https://www.pexels.com/fr-fr/chercher/massage/).
+- **Photo de fond de l'accueil** : remplacez `img/hero.jpg` par votre photo, en gardant exactement ce nom (sans accent ni majuscule), puis augmentez le numéro de version `hero.jpg?v=…` dans `css/style.css`. Utilisez une image en paysage d'environ 1920 × 1080 px et de moins de 400 Ko (compressez-la avec [squoosh.app](https://squoosh.app) par exemple). Un voile sombre est appliqué par-dessus pour que le texte reste lisible ; son intensité se règle dans `.hero-photo` de `css/style.css`. Pour trouver des photos gratuites et libres de droits : [Unsplash](https://unsplash.com/fr/s/photos/massage) ou [Pexels](https://www.pexels.com/fr-fr/chercher/massage/).
 - **Photo du praticien** : ajoutez-la dans `img/`, puis remplacez le bloc `.about-photo` de `index.html` par une balise `<img>`.
 - **Réseaux sociaux** : les liens Facebook, Instagram et LinkedIn sont dans le pied de page de chaque page et sur la page Contact. Remplacez `VOTRE-PAGE`, `VOTRE-COMPTE` et `VOTRE-PROFIL` par vos vraies adresses, dans tous les fichiers HTML. Pour supprimer un réseau, retirez la ligne `<li>` correspondante.
 - **Cache du navigateur** : après une modification de `css/style.css` ou d'un fichier `js/`, augmentez le numéro de version dans les liens de toutes les pages HTML (par exemple `style.css?v=2` → `style.css?v=3`). Sinon, les visiteurs peuvent garder l'ancienne version en cache et voir une page mal affichée.
@@ -101,7 +101,8 @@ python3 -m http.server 8000
 - [ ] Vrais témoignages, ou suppression de la section
 - [ ] Mentions légales : SIRET, nom de l'éditeur
 - [ ] Identifiant Cal.com dans `js/config.js`
-- [ ] Photo de fond (`img/hero.jpg`) et photo du praticien
+- [x] Photo de fond (`img/hero.jpg`)
+- [ ] Photo du praticien
 - [ ] Liens Facebook, Instagram et LinkedIn
 
 > ℹ️ En France, le terme « massage » est réservé aux kinésithérapeutes lorsqu'il a une visée thérapeutique. Le site présente donc des massages **de bien-être, sans visée thérapeutique ou médicale** (mention présente dans le pied de page et les mentions légales).
