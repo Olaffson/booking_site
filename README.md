@@ -23,7 +23,7 @@ Site vitrine pour une activité de massage bien-être, avec prise de rendez-vous
 ├── js/config.js            ⚙️ Identifiant Cal.com et liste des prestations
 ├── js/booking.js           Intégration du calendrier Cal.com
 ├── js/main.js              Menu mobile
-└── img/                    Favicon et images
+└── img/                    Favicon, photo de fond de l'accueil (hero.jpg)
 ```
 
 ## Mise en place de la réservation
@@ -88,7 +88,9 @@ python3 -m http.server 8000
 ## Personnalisation
 
 - **Couleurs et polices** : variables CSS en haut de `css/style.css` (`--color-primary`, etc.).
-- **Photos** : ajoutez vos images dans `img/`, puis remplacez les blocs `.about-photo` et `.hero-visual` de `index.html` par des balises `<img>`.
+- **Photo de fond de l'accueil** : remplacez `img/hero.jpg` par votre photo, en gardant le même nom. Utilisez une image en paysage d'environ 1920 × 1080 px et de moins de 400 Ko (compressez-la avec [squoosh.app](https://squoosh.app) par exemple). L'image fournie n'est qu'une ambiance floue provisoire. Un voile sombre est appliqué par-dessus pour que le texte reste lisible ; son intensité se règle dans `.hero-photo` de `css/style.css`. Pour trouver des photos gratuites et libres de droits : [Unsplash](https://unsplash.com/fr/s/photos/massage) ou [Pexels](https://www.pexels.com/fr-fr/chercher/massage/).
+- **Photo du praticien** : ajoutez-la dans `img/`, puis remplacez le bloc `.about-photo` de `index.html` par une balise `<img>`.
+- **Réseaux sociaux** : les liens Facebook, Instagram et LinkedIn sont dans le pied de page de chaque page et sur la page Contact. Remplacez `VOTRE-PAGE`, `VOTRE-COMPTE` et `VOTRE-PROFIL` par vos vraies adresses, dans tous les fichiers HTML. Pour supprimer un réseau, retirez la ligne `<li>` correspondante.
 - **En-tête et pied de page** : ils sont recopiés dans chaque page HTML. Pensez à modifier toutes les pages.
 
 ## À compléter avant la mise en ligne
@@ -98,6 +100,7 @@ python3 -m http.server 8000
 - [ ] Vrais témoignages, ou suppression de la section
 - [ ] Mentions légales : SIRET, nom de l'éditeur
 - [ ] Identifiant Cal.com dans `js/config.js`
-- [ ] Photos
+- [ ] Photo de fond (`img/hero.jpg`) et photo du praticien
+- [ ] Liens Facebook, Instagram et LinkedIn
 
 > ℹ️ En France, le terme « massage » est réservé aux kinésithérapeutes lorsqu'il a une visée thérapeutique. Le site présente donc des massages **de bien-être, sans visée thérapeutique ou médicale** (mention présente dans le pied de page et les mentions légales).
