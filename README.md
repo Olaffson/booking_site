@@ -100,7 +100,8 @@ python3 -m http.server 8000
 - [ ] Textes de présentation et des prestations, tarifs, horaires
 - [ ] Vrais témoignages, ou suppression de la section
 - [ ] Mentions légales : SIRET, nom de l'éditeur
-- [ ] Identifiant Cal.com dans `js/config.js`
+- [x] Identifiant Cal.com dans `js/config.js`
+- [ ] Types de rendez-vous Cal.com créés avec les bons slugs (voir tableau ci-dessus)
 - [x] Photo de fond (`img/hero.jpg`)
 - [ ] Photo du praticien
 - [ ] Liens Facebook, Instagram et LinkedIn

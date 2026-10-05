@@ -10,7 +10,7 @@
  * affiche un message d'aide au lieu du calendrier.
  */
 window.BOOKING_CONFIG = {
-  CAL_USERNAME: "VOTRE-IDENTIFIANT",
+  CAL_USERNAME: "nicolas-akobcg",
 
   // Clé utilisée dans les liens « reservation.html?prestation=... »
   // → slug du type d'événement Cal.com correspondant.
