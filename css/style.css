@@ -291,7 +291,7 @@ p { margin: 0 0 1em; }
   color: #fff;
   background:
     linear-gradient(90deg, rgba(30, 38, 33, 0.78) 0%, rgba(30, 38, 33, 0.45) 55%, rgba(30, 38, 33, 0.15) 100%),
-    url("../img/hero.jpg") center / cover no-repeat,
+    url("../img/hero.jpg?v=2") center / cover no-repeat,
     var(--color-primary-dark);
 }
 
@@ -340,7 +340,7 @@ p { margin: 0 0 1em; }
     min-height: 70vh;
     background:
       linear-gradient(180deg, rgba(30, 38, 33, 0.55) 0%, rgba(30, 38, 33, 0.8) 100%),
-      url("../img/hero.jpg") center / cover no-repeat,
+      url("../img/hero.jpg?v=2") center / cover no-repeat,
       var(--color-primary-dark);
   }
 }
